@@ -1,1 +1,1 @@
-export { default } from '@fortawesome/ember-fontawesome/components/fa-icon';
+export { default } from '@systherm/ember-fontawesome/components/fa-icon';

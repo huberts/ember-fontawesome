@@ -40,7 +40,7 @@ class FontAwesomePack extends Plugin {
   build() {
     if(this._isBuilt) return
 
-    const pack = require(`@fortawesome/${this.options.pack}`)
+    const pack = require(`@systherm/${this.options.pack}`)
     let selectedIcons;
 
     if(this.options.icons === 'all'){
@@ -61,7 +61,7 @@ class FontAwesomePack extends Plugin {
     const packageContents = `
       export {
         ${ selectedIcons.join(',') }
-      }  from '@fortawesome/${this.options.pack}/index.es.js'
+      }  from '@systherm/${this.options.pack}/index.es.js'
     `
     const _thisPlugin = this
     return new Promise(function(resolve, reject) {

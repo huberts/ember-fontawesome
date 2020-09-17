@@ -41,7 +41,7 @@ class FontAwesomeAutoLibrary extends Plugin {
         ${Object.keys(_thisPlugin.options.icons).map(function(i){
           const addAll = _thisPlugin.options.icons[i] === 'all'
           return `
-          pack = require('@fortawesome/${i}');
+          pack = require('@systherm/${i}');
           delete pack['default'];
           _fontawesome.library.add(pack);`}).join('\n')}
       })()

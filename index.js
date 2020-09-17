@@ -42,7 +42,7 @@ module.exports = {
             format: 'amd',
             interop: false,
             amd: {
-              id:`@fortawesome/${pack}`
+              id:`@systherm/${pack}`
             }
           },
           plugins: [
@@ -135,7 +135,7 @@ module.exports = {
     // 2. If no icons are defined, automatically configure whatever is there under node_modules
     // @TODO: look for any addons contributing config. maybe enumerated in this.app.options.addons
     if (Object.keys(this.fontawesomeConfig.icons).length === 0) {
-      const iconPattern = path.join(this._nodeModulesPath, '@fortawesome', '@(free|pro)-*-svg-icons');
+      const iconPattern = path.join(this._nodeModulesPath, '@systherm', '@(free|pro)-*-svg-icons');
       glob.sync(iconPattern)
         .map(i => i.split('/').pop())
         .reduce((acc, cur) => {
