@@ -1,5 +1,5 @@
 {
-  "name": "@fortawesome/ember-fontawesome",
+  "name": "@systherm/ember-fontawesome",
   "description": "Official Ember component for Font Awesome 5",
   "version": "0.2.2",
   "keywords": [
